@@ -46,7 +46,11 @@ a {
     padding: 5px;
     margin-top: 2.5px;
 }
-
+@media (max-width:450px){
+    .course-time{
+    width: calc(100% / 1 - var(--offset));
+    }
+}
 .grey-line{
     background-color: var(--dark-grey);
     height: 5px;
@@ -63,7 +67,13 @@ a {
     object-position: top;
 }
 
-
+@media (max-width:450px){
+    .image-schedule{
+        height: 300px;
+        object-position: top;
+        object-fit: cover;
+    }
+}
 .text-all-schedule {
     
     color: var(--grey-2);
