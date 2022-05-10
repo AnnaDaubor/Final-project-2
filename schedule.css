@@ -1,0 +1,76 @@
+html {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+
+    --white:#FFFFFF;
+    --orange:#E89B2B;
+    --grey-1:#404043;
+    --grey-2:#3F3F40;
+    --dark-grey:#202021;
+
+    --offset: 40px;
+}
+
+* {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+
+.block-time-schedule{
+    background-color: var(--grey-2);
+    color: var(--white);
+    font-size: 150%;
+    padding: 10px;
+    line-height: 2;
+    font-family: 'Source Sans 3', sans-serif;
+    
+
+}
+
+.course-time{
+	padding: 50px 0;
+	text-align: center;
+	width: calc(100% / 3 - var(--offset));
+	margin: calc(var(--offset) / 2);
+
+}
+
+.dance-name-time{
+    background-color: var(--grey-2);
+    color: var(--white);
+    text-align: start;
+    width: 40%;
+    font-size: 150%;
+    font-weight: 600;
+    padding: 5px;
+    margin-top: 2.5px;
+}
+
+.grey-line{
+    background-color: var(--dark-grey);
+    height: 5px;
+}
+
+.light-grey-line{
+    background-color: var(--grey-2);
+    height: 5px;
+}
+.image-schedule{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+
+.text-all-schedule {
+    
+    color: var(--grey-2);
+    font-size: 200%;
+    font-weight: 600;
+    padding: 5px;
+
+    cursor: pointer;
+
+}
