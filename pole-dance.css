@@ -24,7 +24,13 @@ html {
 
 }
 
-
+@media (max-width:450px){
+    .container-subscription-2{
+        
+        max-width: 450px;
+    }
+    
+}
 
 .block-pole-dance{
     
@@ -39,6 +45,20 @@ html {
     width: calc(100% / 12 * 6 - var(--offset));
     margin: calc(var(--offset) / 2);
 
+}
+@media (max-width:450px){
+    .block-pole-dance{
+
+        width: calc(100% / 12 * 10 - var(--offset));
+        margin-left: 50px; 
+        
+    }
+    .pole-dance-image{
+    
+        width: calc(100% / 12 * 10 - var(--offset));
+        margin-left: 50px;
+    
+    }
 }
 
 .pole-dance-description{
@@ -86,6 +106,13 @@ span-2{
     display: flex;
     flex-direction: row;
 }
+@media (max-width:450px){
+    .schedule-row{
+
+        width: calc(100% / 1 - var(--offset));
+    }
+    
+}
 
 .another-direction{
     width: calc(100% / 1 - var(--offset));
@@ -97,6 +124,14 @@ span-2{
     margin-bottom: 50px;
     
 
+}
+
+@media (max-width:450px){
+    .another-direction{
+        
+        justify-content: center;
+    }
+    
 }
 .text-direction {
     border: 1px solid var(--white);
