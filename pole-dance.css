@@ -24,39 +24,47 @@ html {
 
 }
 
-@media (max-width:450px){
-    .container-subscription-2{
-        
-        max-width: 450px;
-    }
-    
-}
 
 .block-pole-dance{
     
-    width: calc(100% / 12 * 6 - var(--offset));
+    width: calc(100% / 12 * 5 - var(--offset));
     margin: calc(var(--offset) / 2);
     
 
 }
 
 .pole-dance-image{
-    
+    background-image: url(img/pole-dance.png);
+    background-size: cover;
+    background-repeat: no-repeat;
     width: calc(100% / 12 * 6 - var(--offset));
     margin: calc(var(--offset) / 2);
 
 }
-@media (max-width:450px){
+@media (max-width:768px){
+    .block-pole-dance{
+    
+        width: calc(100% / 12 * 7 - var(--offset));
+    }
+    .pole-dance-image{
+       
+        width: calc(100% / 12 * 5 - var(--offset));
+        margin: calc(var(--offset) / 2);
+        
+    
+    }
+}
+@media (max-width:500px){
     .block-pole-dance{
 
-        width: calc(100% / 12 * 10 - var(--offset));
-        margin-left: 50px; 
+        width: calc(100% / 12 * 12 - var(--offset));
+       
         
     }
     .pole-dance-image{
-    
-        width: calc(100% / 12 * 10 - var(--offset));
-        margin-left: 50px;
+        flex-direction: column;
+        width: calc(100% / 12 * 5 - var(--offset));
+        
     
     }
 }
@@ -106,12 +114,17 @@ span-2{
     display: flex;
     flex-direction: row;
 }
-@media (max-width:450px){
+
+@media (max-width:768px){
     .schedule-row{
 
         width: calc(100% / 1 - var(--offset));
     }
-    
+    .button-row-2{
+        
+        flex-direction: column;
+    }
+
 }
 
 .another-direction{
@@ -126,7 +139,7 @@ span-2{
 
 }
 
-@media (max-width:450px){
+@media (max-width:768px){
     .another-direction{
         
         justify-content: center;

@@ -45,10 +45,18 @@ a {
     font-weight: 600;
     padding: 5px;
     margin-top: 2.5px;
+
 }
-@media (max-width:450px){
+@media (max-width:768px){
+    .course-time{
+    width: calc(100% / 2 - var(--offset));
+    margin: calc(var(--offset) / 2);
+    }
+}
+@media (max-width:500px){
     .course-time{
     width: calc(100% / 1 - var(--offset));
+    margin: calc(var(--offset) / 2);
     }
 }
 .grey-line{
@@ -67,11 +75,30 @@ a {
     object-position: top;
 }
 
-@media (max-width:450px){
+@media (max-width:768px){
+
+    .button-row{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        align-items: center;
+        width: calc(100% / 2 - var(--offset));
+    }
+}
+
+@media (max-width:500px){
     .image-schedule{
-        height: 300px;
+        height: 400px;
         object-position: top;
         object-fit: cover;
+    }
+
+    .button-row{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        width: calc(100% / 2 - var(--offset));
     }
 }
 .text-all-schedule {
