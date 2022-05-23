@@ -111,7 +111,6 @@ a {
 	display: flex;
     flex-direction: row;
 	flex-wrap: wrap;
-	margin: 0 calc(0px - var(--offset) / 2);
 }
 
 @media (max-width:450px){
@@ -135,7 +134,7 @@ a {
 
     .promotion-background {
         background-color: var(--dark-grey);
-        width: calc(100% / 12 * 12  - var(--offset));
+        width: 100%;
         
     }
 }
